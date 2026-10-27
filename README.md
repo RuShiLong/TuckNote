@@ -2,11 +2,15 @@
 
 Kho cá nhân cho Inbox, ghi chú, link và Két bí mật. Backend ASP.NET Core 10 + EF Core 10 + SQL Server; giao diện React/TypeScript. Giao diện tiếng Việt, tối ưu desktop và điện thoại. Không có đăng ký công khai.
 
+## Bản xem giao diện công khai
+
+[Mở bản xem TuckNote](https://rushilong.github.io/TuckNote/) trên GitHub Pages. Bản xem nằm trong `docs/`, chỉ trình bày bố cục và các màn hình ở trạng thái không có dữ liệu. Nó không gọi API, không kết nối database, không cho đăng nhập và không chứa ghi chú hay nội dung két của chủ sở hữu. Ứng dụng đầy đủ vẫn cần một máy chủ ASP.NET Core và SQL Server để hoạt động.
+
 ## Trạng thái hiện tại
 
 - Dự án gốc là mẫu ASP.NET Core trống. Không có `AGENTS.md` hoặc Git trong thư mục này lúc bắt đầu.
 - Đã kiểm tra `NSHLONG\SQLEXPRESS` bằng Windows Authentication: database `TuckNote` chưa có trong danh sách nhìn thấy được bởi tài khoản hiện tại. **Chưa tạo hoặc sửa database này.** Cần SQL Authentication của bạn trước khi triển khai.
-- Môi trường phát triển dùng SQL Server LocalDB database `TuckNoteDev`; migration `InitialCreate` đã áp dụng. Không có tài khoản chủ sở hữu hay dữ liệu mẫu trong database phát triển.
+- Môi trường phát triển dùng SQL Server LocalDB database `TuckNoteDev`; migration `InitialCreate` đã áp dụng. Dữ liệu phát triển nằm trên máy NSHLONG và không được đưa lên GitHub Pages.
 - Chưa triển khai ra Internet vì chưa có thông tin SQL Authentication, tên miền và chứng chỉ HTTPS tin cậy.
 
 ## Cấu trúc

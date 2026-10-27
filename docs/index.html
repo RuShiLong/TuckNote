@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Xem giao diện công khai của TuckNote, kho cá nhân cho ghi chú, liên kết và két bí mật."
+    />
+    <title>TuckNote — Xem giao diện</title>
+    <link rel="stylesheet" href="./site.css" />
+    <script src="./site.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#preview">Bỏ qua đến giao diện</a>
+    <header class="site-header">
+      <a class="site-brand" href="#top" aria-label="TuckNote, về đầu trang"
+        ><span class="brand-mark">T</span><span>TuckNote</span></a
+      >
+      <span class="preview-label">Bản xem giao diện công khai</span>
+      <a class="source-link" href="https://github.com/RuShiLong/TuckNote"
+        >Xem mã nguồn <span aria-hidden="true">↗</span></a
+      >
+    </header>
+
+    <main id="top">
+      <section class="intro" aria-labelledby="intro-title">
+        <div class="intro-copy">
+          <p class="eyebrow">TUCKNOTE / KHÔNG GIAN RIÊNG TƯ</p>
+          <h1 id="intro-title">Một nơi cho những điều bạn muốn giữ lại.</h1>
+          <p class="intro-lead">
+            Ghi nhanh ý tưởng, sắp xếp ghi chú và liên kết, giữ thông tin nhạy
+            cảm trong két được mã hóa trên thiết bị.
+          </p>
+          <div class="intro-actions">
+            <a class="primary-link" href="#preview"
+              >Khám phá giao diện <span aria-hidden="true">↓</span></a
+            >
+            <a
+              class="text-link"
+              href="https://github.com/RuShiLong/TuckNote#readme"
+              >Đọc về dự án <span aria-hidden="true">↗</span></a
+            >
+          </div>
+        </div>
+        <div class="intro-aside" aria-label="Các khu vực chính của TuckNote">
+          <div class="aside-line">
+            <span>01</span><strong>Inbox</strong
+            ><small>Ghi nhanh, phân loại sau</small>
+          </div>
+          <div class="aside-line">
+            <span>02</span><strong>Ghi chú</strong
+            ><small>Viết, tìm kiếm, khôi phục</small>
+          </div>
+          <div class="aside-line">
+            <span>03</span><strong>Bộ sưu tập</strong
+            ><small>Giữ link và nguồn tham khảo</small>
+          </div>
+          <div class="aside-line">
+            <span>04</span><strong>Két bí mật</strong
+            ><small>Mã hóa trước khi đồng bộ</small>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="preview-section"
+        id="preview"
+        aria-labelledby="preview-title"
+      >
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">GIAO DIỆN</p>
+            <h2 id="preview-title">Khám phá TuckNote</h2>
+          </div>
+          <p>
+            Chọn một mục để xem bố cục. Đây là bản xem chỉ đọc; không kết nối
+            tài khoản hay dữ liệu thật.
+          </p>
+        </div>
+        <div class="app-frame">
+          <aside class="app-sidebar" aria-label="Điều hướng bản xem">
+            <div class="app-brand">
+              <span class="brand-mark">T</span
+              ><span>TuckNote<small>KHÔNG GIAN RIÊNG TƯ</small></span>
+            </div>
+            <div class="quick-disabled" aria-disabled="true">
+              <span aria-hidden="true">＋</span> Lưu nhanh
+              <small>Trong ứng dụng thật</small>
+            </div>
+            <nav class="app-nav" aria-label="Các màn hình TuckNote">
+              <button
+                class="nav-item active"
+                type="button"
+                data-screen="dashboard"
+                aria-current="page"
+              >
+                <span aria-hidden="true">▦</span> Tổng quan
+              </button>
+              <button class="nav-item" type="button" data-screen="inbox">
+                <span aria-hidden="true">▤</span> Inbox
+              </button>
+              <button class="nav-item" type="button" data-screen="notes">
+                <span aria-hidden="true">▣</span> Ghi chú
+              </button>
+              <button class="nav-item" type="button" data-screen="links">
+                <span aria-hidden="true">↗</span> Bộ sưu tập
+              </button>
+              <button class="nav-item" type="button" data-screen="vault">
+                <span aria-hidden="true">◇</span> Két bí mật
+              </button>
+              <button class="nav-item" type="button" data-screen="archive">
+                <span aria-hidden="true">▧</span> Lưu trữ
+              </button>
+              <button class="nav-item" type="button" data-screen="trash">
+                <span aria-hidden="true">⌫</span> Thùng rác
+              </button>
+              <button class="nav-item" type="button" data-screen="settings">
+                <span aria-hidden="true">⚙</span> Cài đặt & sao lưu
+              </button>
+            </nav>
+            <div class="app-sidebar-foot">
+              <span class="avatar" aria-hidden="true">T</span
+              ><span>Bản xem công khai</span>
+            </div>
+          </aside>
+          <div class="app-main">
+            <div class="app-topbar">
+              <span
+                >TuckNote <span aria-hidden="true">/</span>
+                <strong id="breadcrumb">Tổng quan</strong></span
+              ><span class="read-only">CHỈ ĐỌC</span>
+            </div>
+            <div class="app-content">
+              <div class="app-heading">
+                <div>
+                  <p class="eyebrow" id="screen-kicker">TỔNG QUAN</p>
+                  <h3 id="screen-title">Không gian của bạn</h3>
+                  <p id="screen-description">
+                    Một góc nhìn rõ ràng để bắt đầu và quay lại những điều quan
+                    trọng.
+                  </p>
+                </div>
+                <span class="screen-counter" id="screen-counter">01 / 08</span>
+              </div>
+              <div class="overview-grid" id="overview-grid">
+                <div class="overview-card">
+                  <span class="card-icon" aria-hidden="true">▤</span
+                  ><strong>Ghi nhanh vào Inbox</strong>
+                  <p>
+                    Đưa ý tưởng và đường link vào một chỗ trước khi sắp xếp.
+                  </p>
+                </div>
+                <div class="overview-card">
+                  <span class="card-icon" aria-hidden="true">▣</span
+                  ><strong>Giữ ghi chú có tổ chức</strong>
+                  <p>Tìm lại nội dung bằng tiêu đề, thẻ và thời gian.</p>
+                </div>
+                <div class="overview-card">
+                  <span class="card-icon" aria-hidden="true">◇</span
+                  ><strong>Khóa điều riêng tư</strong>
+                  <p>
+                    Két dùng khóa riêng và chỉ giải mã trên thiết bị của bạn.
+                  </p>
+                </div>
+              </div>
+              <div class="empty-panel" id="empty-panel" hidden>
+                <span class="empty-icon" id="empty-icon" aria-hidden="true"
+                  >▤</span
+                >
+                <h4 id="empty-title">Không có dữ liệu công khai</h4>
+                <p id="empty-description">
+                  Dữ liệu cá nhân chỉ hiển thị sau khi đăng nhập vào ứng dụng
+                  thật.
+                </p>
+                <span class="empty-note"
+                  >BẢN XEM KHÔNG LƯU HAY ĐỒNG BỘ DỮ LIỆU</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about" aria-labelledby="about-title">
+        <div>
+          <p class="eyebrow">VỀ BẢN XEM</p>
+          <h2 id="about-title">Giao diện mở. Dữ liệu vẫn riêng tư.</h2>
+        </div>
+        <p>
+          Trang này chỉ giới thiệu bố cục và các khu vực của TuckNote. Bản
+          TuckNote có đầy đủ đăng nhập, ghi chú, đồng bộ và két bí mật chạy trên
+          máy chủ riêng; GitHub Pages không lưu hay truy cập dữ liệu cá nhân.
+        </p>
+      </section>
+    </main>
+    <footer>
+      <span>© TuckNote</span
+      ><a href="https://github.com/RuShiLong/TuckNote"
+        >Mã nguồn trên GitHub ↗</a
+      >
+    </footer>
+  </body>
+</html>
