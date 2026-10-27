@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="Tucknote.Tests/Tucknote.Tests.csproj" />
+  <Project Path="Tucknote/Tucknote.csproj" />
+</Solution>

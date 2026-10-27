@@ -11,4 +11,3 @@ publish-check/
 .env
 .env.*
 !.env.example
-
