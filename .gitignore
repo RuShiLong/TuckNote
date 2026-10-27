@@ -1,0 +1,14 @@
+.vs/
+**/bin/
+**/obj/
+**/*.csproj.user
+client/node_modules/
+client/*.tsbuildinfo
+publish-check/
+*.user
+*.suo
+*.log
+.env
+.env.*
+!.env.example
+
