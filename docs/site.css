@@ -398,6 +398,9 @@ footer a:hover {
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 15px;
 }
+.overview-grid[hidden] {
+  display: none;
+}
 .overview-card {
   min-height: 200px;
   border: 1px solid #e9e9e9;
